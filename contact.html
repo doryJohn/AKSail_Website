@@ -22,6 +22,13 @@
   <form class="form" id="quoteForm">
     <label for="name">Name</label><input id="name" name="name" autocomplete="name" required>
     <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required>
+    <label for="tripType">Trip type</label>
+    <select id="tripType" name="trip_type" required>
+      <option value="" selected disabled>Select a trip type</option>
+      <option value="Day Sailing">Day Sailing</option>
+      <option value="Multi-Day Trips">Multi-Day Trips</option>
+      <option value="Custom Adventures">Custom Adventures</option>
+    </select>
     <label for="dates">Approximate dates</label><input id="dates" name="dates">
     <label for="guests">Number of guests</label><input id="guests" name="guests" type="number" min="1" max="20">
     <label for="trip">What would you like to do?</label><textarea id="trip" name="trip"></textarea>
