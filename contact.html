@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Request a Quote | AKSail LLC</title>
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">AKSAIL <small>LLC</small></a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="charters.html">Charters</a>
+      <a href="siren.html">Siren</a>
+      <a href="alaska.html">Alaska</a>
+      <a href="contact.html">Request a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero"><div class="container"><div class="kicker">AKSail LLC</div><h1>Request a Quote</h1><p>Tell us what kind of Southeast Alaska sailing adventure you have in mind.</p></div></section>
+<section class="section"><div class="container">
+  <form class="form" id="quoteForm">
+    <label for="name">Name</label><input id="name" name="name" autocomplete="name" required>
+    <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required>
+    <label for="dates">Approximate dates</label><input id="dates" name="dates">
+    <label for="guests">Number of guests</label><input id="guests" name="guests" type="number" min="1" max="20">
+    <label for="trip">What would you like to do?</label><textarea id="trip" name="trip"></textarea>
+    <label for="message">Anything else?</label><textarea id="message" name="message"></textarea>
+
+    <!-- Honeypot field. Real visitors never see or fill this. -->
+    <div class="hp-field" aria-hidden="true">
+      <label for="website">Website</label>
+      <input id="website" name="website" tabindex="-1" autocomplete="off">
+    </div>
+
+    <button class="button" id="submitButton" type="submit">Send Request</button>
+    <p id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+</div></section>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>AKSAIL LLC</strong><br>Private sailing charters aboard <em>Siren</em></div>
+    <div>Southeast Alaska<br><a href="contact.html">Request a charter</a></div>
+  </div>
+</footer>
+
+<script src="js/contact.js"></script>
+</body></html>
