@@ -9,6 +9,14 @@ const form = document.getElementById("quoteForm");
 const submitButton = document.getElementById("submitButton");
 const status = document.getElementById("formStatus");
 
+// Preselect the trip type when the contact page is opened from a charter-specific link.
+const tripType = document.getElementById("tripType");
+const requestedTrip = new URLSearchParams(window.location.search).get("trip");
+const validTripTypes = ["Day Sailing", "Multi-Day Trips", "Custom Adventures"];
+if (tripType && validTripTypes.includes(requestedTrip)) {
+  tripType.value = requestedTrip;
+}
+
 function showStatus(message) {
   status.textContent = message;
 }
